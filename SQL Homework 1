@@ -45,8 +45,14 @@ SELECT COUNT(name) FROM `Track` WHERE GenreId = 1;
 SELECT FirstName, LastName FROM Employee WHERE ReportsTo = (SELECT EmployeeId FROM Employee WHERE FirstName = 'Nancy' AND LastName = 'Edwards');
 
 
+#Question 6
+This one is wrong but I don't know why 
 
-
+SELECT Customer.CustomerId, SUM(InvoiceLine.UnitPrice * InvoiceLine.Quantity) AS TotalSales
+FROM InvoiceLine
+JOIN Customer ON InvoiceLine.CustomerId = Customer.CustomerId
+GROUP BY Customer.CustomerId
+Order by TotalSales DESC;
 
 
 
