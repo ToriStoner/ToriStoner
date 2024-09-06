@@ -14,4 +14,7 @@ SELECT name FROM `city` WHERE CountryCode = "JPN";
 
 SELECT name, Population FROM `country` WHERE continent = "Africa" ORDER BY population DESC LIMIT 3;
 
+#Question 5: 
+
+SELECT name, LifeExpectancy, Population FROM `country` WHERE population > 1000000 AND population < 5000000;
 
