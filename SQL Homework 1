@@ -40,6 +40,11 @@ SELECT name FROM `Playlist`;
 
 SELECT COUNT(name) FROM `Track` WHERE GenreId = 1;
 
+#Question 5: 
+
+SELECT FirstName, LastName FROM Employee WHERE ReportsTo = (SELECT EmployeeId FROM Employee WHERE FirstName = 'Nancy' AND LastName = 'Edwards');
+
+
 
 
 
