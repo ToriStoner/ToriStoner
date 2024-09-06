@@ -1,3 +1,12 @@
 #Question 1 
 
 SELECT name FROM `country` WHERE region = "South America"; 
+
+#Question 2: 
+
+SELECT population FROM `country` WHERE name = "Germany";
+
+#Question 3: 
+
+SELECT name FROM `city` WHERE CountryCode = "JPN";
+
