@@ -22,5 +22,22 @@ SELECT name, LifeExpectancy, Population FROM `country` WHERE population > 100000
 
 SELECT CountryCode FROM `countrylanguage` WHERE Language = "French" AND IsOfficial = "T";
 
+Chinook Database questions 
+
+#Question 1: #double check this one 
+
+SELECT Title FROM `Album` WHERE ArtistId = 1;
+
+#Question 2: 
+
+SELECT FirstName, LastName, Email FROM `Customer` WHERE Country = "Brazil";
+
+#Question 3: 
+
+SELECT name FROM `Playlist`;
+
+
+
+
 
 
