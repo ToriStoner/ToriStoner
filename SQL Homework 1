@@ -18,3 +18,9 @@ SELECT name, Population FROM `country` WHERE continent = "Africa" ORDER BY popul
 
 SELECT name, LifeExpectancy, Population FROM `country` WHERE population > 1000000 AND population < 5000000;
 
+#Question 6: 
+
+SELECT CountryCode FROM `countrylanguage` WHERE Language = "French" AND IsOfficial = "T";
+
+
+
