@@ -46,13 +46,5 @@ SELECT FirstName, LastName FROM Employee WHERE ReportsTo = (SELECT EmployeeId FR
 
 
 #Question 6
-This one is wrong but I don't know why 
-
-SELECT Customer.CustomerId, SUM(InvoiceLine.UnitPrice * InvoiceLine.Quantity) AS TotalSales
-FROM InvoiceLine
-JOIN Customer ON InvoiceLine.CustomerId = Customer.CustomerId
-GROUP BY Customer.CustomerId
-Order by TotalSales DESC;
-
-
+SELECT Customer.CustomerId, SUM(InvoiceLine.UnitPrice * InvoiceLine.Quantity) AS IndividualSales FROM InvoiceLine JOIN Invoice ON InvoiceLine.InvoiceId = Invoice.InvoiceId JOIN Customer ON Invoice.CustomerId = Customer.CustomerId GROUP BY CustomerId ORDER BY IndividualSales DESC;
 
