@@ -36,6 +36,10 @@ SELECT FirstName, LastName, Email FROM `Customer` WHERE Country = "Brazil";
 
 SELECT name FROM `Playlist`;
 
+#Question 4: 
+
+SELECT COUNT(name) FROM `Track` WHERE GenreId = 1;
+
 
 
 
