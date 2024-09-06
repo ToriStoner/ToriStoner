@@ -1,0 +1,3 @@
+#Question 1 
+
+SELECT name FROM `country` WHERE region = "South America"; 
