@@ -10,3 +10,8 @@ SELECT population FROM `country` WHERE name = "Germany";
 
 SELECT name FROM `city` WHERE CountryCode = "JPN";
 
+#Question 4: 
+
+SELECT name, Population FROM `country` WHERE continent = "Africa" ORDER BY population DESC LIMIT 3;
+
+
