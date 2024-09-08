@@ -26,7 +26,7 @@ WHERE countrylanguage.Language = 'French' AND countrylanguage.IsOfficial = 'T';
 
 Chinook Database questions 
 
-#Question 1: #double check this one 
+#Question 1: 
 
 SELECT AlbumId, Title FROM Album WHERE ArtistId = (SELECT ArtistId FROM Artist WHERE Name = 'AC/DC');
 
