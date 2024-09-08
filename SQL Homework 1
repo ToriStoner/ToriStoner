@@ -58,3 +58,18 @@ Price INT,
 Product VARCHAR(80), 
 PRIMARY KEY (Name, Surname, OrderDate)
 );
+
+INSERT INTO customers(Joe, Ryan, Price, Product)
+VALUES ("Bill", "Robinson", 90.20, "Dresser");
+
+INSERT INTO customers(Name, Surname, Price, Product)
+VALUES ("Bill", "Robinson", 90.20, "Dresser");
+
+INSERT INTO customers(Name, Surname, Price, Product)
+VALUES ("Lacy", "Robinson", 200.45, "Couch");
+
+INSERT INTO customers(Name, Surname, Price, Product)
+VALUES ("Jack", "Hamilton", 164.78, "Crib");
+
+INSERT INTO customers(Name, Surname, Price, Product)
+VALUES ("Emilia", "Johnson", 58.90, "Mirror");
