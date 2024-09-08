@@ -73,3 +73,5 @@ VALUES ("Jack", "Hamilton", 164.78, "Crib");
 
 INSERT INTO customers(Name, Surname, Price, Product)
 VALUES ("Emilia", "Johnson", 58.90, "Mirror");
+
+CREATE TABLE Inventory ( ProductName VARCHAR(80), Color VARCHAR(80), Width INT, Height INT, Length INT, Quantity INT );
