@@ -20,7 +20,9 @@ SELECT name, LifeExpectancy, Population FROM `country` WHERE population > 100000
 
 #Question 6: 
 
-SELECT CountryCode FROM `countrylanguage` WHERE Language = "French" AND IsOfficial = "T";
+SELECT country.Name FROM country
+JOIN countrylanguage ON country.Code = countrylanguage.CountryCode
+WHERE countrylanguage.Language = 'French' AND countrylanguage.IsOfficial = 'T';
 
 Chinook Database questions 
 
