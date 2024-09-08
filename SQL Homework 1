@@ -115,4 +115,12 @@ VALUES ("Mathew", "Shoe", 98765, 25, "Security", 1)
 INSERT INTO employees(Name, Surname, ZipCode, Salary, Title, YearsEmployeed)
 VALUES ("Natalia", "Smith", 30948, 20, "Associate", 1)
 
+#3 Queries 
+
+#1 Find the three most expensive items customers have bought. 
+
+#2 Retrieve the items that have a quantity of above 70. 
+
+#List the employees with more than 1 year of experience. 
+
 
