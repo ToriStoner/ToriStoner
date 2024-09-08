@@ -48,3 +48,12 @@ SELECT FirstName, LastName FROM Employee WHERE ReportsTo = (SELECT EmployeeId FR
 #Question 6
 SELECT Customer.CustomerId, SUM(InvoiceLine.UnitPrice * InvoiceLine.Quantity) AS IndividualSales FROM InvoiceLine JOIN Invoice ON InvoiceLine.InvoiceId = Invoice.InvoiceId JOIN Customer ON Invoice.CustomerId = Customer.CustomerId GROUP BY CustomerId ORDER BY IndividualSales DESC;
 
+#Part 2 
+
+Create TABLE customers (
+Name VARCHAR(80), 
+Surname VARCHAR(80),
+OrderDate INT, 
+Price INT, 
+Product VARCHAR(80), 
+);
