@@ -59,8 +59,8 @@ Product VARCHAR(80),
 PRIMARY KEY (Name, Surname, OrderDate)
 );
 
-INSERT INTO customers(Joe, Ryan, Price, Product)
-VALUES ("Bill", "Robinson", 90.20, "Dresser");
+INSERT INTO customers(Name, Surname, Price, Product)
+VALUES ("Joe", "Ryan", 90.20, "Dresser");
 
 INSERT INTO customers(Name, Surname, Price, Product)
 VALUES ("Bill", "Robinson", 90.20, "Dresser");
