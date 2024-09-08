@@ -52,69 +52,70 @@ SELECT Customer.CustomerId, SUM(InvoiceLine.UnitPrice * InvoiceLine.Quantity) AS
 
 #Part 2 
 
-Create TABLE customers (
+Create TABLE CustomerInformation (
 Name VARCHAR(80), 
 Surname VARCHAR(80), 
 Price INT, 
 Product VARCHAR(80), 
-PRIMARY KEY (Name, Surname, OrderDate)
+EmployeeID INT, 
+PRIMARY KEY (Name, Surname, Product)
 );
 
-INSERT INTO customers(Name, Surname, Price, Product)
-VALUES ("Joe", "Ryan", 61, "DeskChair");
+INSERT INTO customers(Name, Surname, Price, Product, EmployeeID)
+VALUES ("Joe", "Ryan", 61, "DeskChair", 1);
 
-INSERT INTO customers(Name, Surname, Price, Product)
-VALUES ("Bill", "Robinson", 90, "Dresser");
+INSERT INTO customers(Name, Surname, Price, Product, EmployeeID)
+VALUES ("Bill", "Robinson", 90, "Dresser", 2);
 
-INSERT INTO customers(Name, Surname, Price, Product)
-VALUES ("Lacy", "Robinson", 200, "Couch");
+INSERT INTO customers(Name, Surname, Price, Product, EmployeeID)
+VALUES ("Lacy", "Robinson", 200, "Couch", 3);
 
-INSERT INTO customers(Name, Surname, Price, Product)
-VALUES ("Jack", "Hamilton", 165, "Crib");
+INSERT INTO customers(Name, Surname, Price, Product, EmployeeID)
+VALUES ("Jack", "Hamilton", 165, "Crib", 4);
 
-INSERT INTO customers(Name, Surname, Price, Product)
-VALUES ("Emilia", "Johnson", 59, "Mirror");
+INSERT INTO customers(Name, Surname, Price, Product, EmployeeID)
+VALUES ("Emilia", "Johnson", 59, "Mirror", 5);
 
 #Table 2 
 
-CREATE TABLE Inventory ( ProductName VARCHAR(80), Color VARCHAR(80), Width INT, Height INT, Length INT, Quantity INT );
+CREATE TABLE ProductsList ( Product VARCHAR(80), Color VARCHAR(80), Width INT, Height INT, Length INT, Quantity INT );
 
-INSERT INTO Inventory(ProductName, Color, Width, Height, Length, Quantity)
+INSERT INTO Inventory(Product, Color, Width, Height, Length, Quantity)
 VALUES ("Dresser", "Brown", 30, 50, 18, 107);
 
-INSERT INTO Inventory(ProductName, Color, Width, Height, Length, Quantity)
-VALUES ("Desk", "White", 40, 30, 25, 99);
+INSERT INTO Inventory(Product, Color, Width, Height, Length, Quantity)
+VALUES ("Mirror", "White", 40, 30, 25, 99);
 
-INSERT INTO Inventory(ProductName, Color, Width, Height, Length, Quantity)
-VALUES ("WoodenChair", "Brown", 16, 16, 16, 65);
+INSERT INTO Inventory(Product, Color, Width, Height, Length, Quantity)
+VALUES ("Crib", "Brown", 16, 16, 16, 65);
 
-INSERT INTO Inventory(ProductName, Color, Width, Height, Length, Quantity)
-VALUES ("Bookshelf", "Black", 20, 70, 40, 35);
+INSERT INTO Inventory(Product, Color, Width, Height, Length, Quantity)
+VALUES ("Desk", "Black", 20, 70, 40, 35);
 
-INSERT INTO Inventory(ProductName, Color, Width, Height, Length, Quantity)
-VALUES ("SmallLamp", "Brown", 6, 10, 4, 289);
+INSERT INTO Inventory(Product, Color, Width, Height, Length, Quantity)
+VALUES ("Chair", "Brown", 6, 10, 4, 289);
 
 
 #Table 3
-CREATE TABLE employees( Name VARCHAR(80), Surname VARCHAR(80), ZipCode INT, Salary INT, Title VARCHAR(80), YearsEmployeed INT, PRIMARY KEY (Name, Surname, ZipCode) );
+CREATE TABLE EmployeeRoles( Name VARCHAR(80), Surname VARCHAR(80), ZipCode INT, Salary INT, Title VARCHAR(80), YearsEmployed INT, EmployeeID INT, PRIMARY KEY (Name, Surname, ZipCode) );
 
-INSERT INTO employees(Name, Surname, ZipCode, Salary, Title, YearsEmployeed)
-VALUES ("Erik", "Cambell", 20394, 30, "Customer Service", 1);
+INSERT INTO EmployeeRoles(Name, Surname, ZipCode, Salary, Title, YearsEmployed, EmployeeID)
+VALUES ("Erik", "Cambell", 20394, 30, "Customer Service", 1, 1);
 
-INSERT INTO employees(Name, Surname, ZipCode, Salary, Title, YearsEmployeed)
-VALUES ("Jillian", "Kim", 79345, 40, "General Manager", 2)
-
-
-INSERT INTO employees(Name, Surname, ZipCode, Salary, Title, YearsEmployeed)
-VALUES ("Katherine", "Jones", 65743, 60, "Owner", 3)
+INSERT INTO EmployeeRoles(Name, Surname, ZipCode, Salary, Title, YearsEmployed, EmployeeID)
+VALUES ("Jillian", "Kim", 79345, 40, "General Manager", 2, 2);
 
 
-INSERT INTO employees(Name, Surname, ZipCode, Salary, Title, YearsEmployeed)
-VALUES ("Mathew", "Shoe", 98765, 25, "Security", 1)
+INSERT INTO EmployeeRoles(Name, Surname, ZipCode, Salary, Title, YearsEmployed, EmployeeID)
+VALUES ("Katherine", "Jones", 65743, 60, "Owner", 3,3);
 
 
-INSERT INTO employees(Name, Surname, ZipCode, Salary, Title, YearsEmployeed)
-VALUES ("Natalia", "Smith", 30948, 20, "Associate", 1)
+INSERT INTO EmployeeRoles(Name, Surname, ZipCode, Salary, Title, YearsEmployed, EmployeeID)
+VALUES ("Mathew", "Shoe", 98765, 25, "Security", 1,4);
+
+
+INSERT INTO EmployeeRoles(Name, Surname, ZipCode, Salary, Title, YearsEmployed, EmployeeID)
+VALUES ("Natalia", "Smith", 30948, 20, "Associate", 1, 5)
 
 #3 Queries 
 
