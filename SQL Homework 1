@@ -56,4 +56,5 @@ Surname VARCHAR(80),
 OrderDate INT, 
 Price INT, 
 Product VARCHAR(80), 
+PRIMARY KEY (Name, Surname, OrderDate)
 );
