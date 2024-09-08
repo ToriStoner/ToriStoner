@@ -54,8 +54,7 @@ SELECT Customer.CustomerId, SUM(InvoiceLine.UnitPrice * InvoiceLine.Quantity) AS
 
 Create TABLE customers (
 Name VARCHAR(80), 
-Surname VARCHAR(80),
-OrderDate INT, 
+Surname VARCHAR(80), 
 Price INT, 
 Product VARCHAR(80), 
 PRIMARY KEY (Name, Surname, OrderDate)
