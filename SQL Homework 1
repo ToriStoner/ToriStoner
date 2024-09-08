@@ -28,7 +28,7 @@ Chinook Database questions
 
 #Question 1: #double check this one 
 
-SELECT Title FROM `Album` WHERE ArtistId = 1;
+SELECT AlbumId, Title FROM Album WHERE ArtistId = (SELECT ArtistId FROM Artist WHERE Name = 'AC/DC');
 
 #Question 2: 
 
