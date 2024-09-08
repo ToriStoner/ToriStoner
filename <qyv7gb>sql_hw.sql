@@ -26,28 +26,28 @@ WHERE countrylanguage.Language = 'French' AND countrylanguage.IsOfficial = 'T';
 
 Chinook Database questions 
 
-#Question 1: 
+#Question 7: 
 
 SELECT AlbumId, Title FROM Album WHERE ArtistId = (SELECT ArtistId FROM Artist WHERE Name = 'AC/DC');
 
-#Question 2: 
+#Question 8: 
 
 SELECT FirstName, LastName, Email FROM `Customer` WHERE Country = "Brazil";
 
-#Question 3: 
+#Question 9: 
 
 SELECT name FROM `Playlist`;
 
-#Question 4: 
+#Question 10: 
 
 SELECT COUNT(name) FROM `Track` WHERE GenreId = 1;
 
-#Question 5: 
+#Question 11: 
 
 SELECT FirstName, LastName FROM Employee WHERE ReportsTo = (SELECT EmployeeId FROM Employee WHERE FirstName = 'Nancy' AND LastName = 'Edwards');
 
 
-#Question 6
+#Question 12:
 SELECT Customer.CustomerId, SUM(InvoiceLine.UnitPrice * InvoiceLine.Quantity) AS IndividualSales FROM InvoiceLine JOIN Invoice ON InvoiceLine.InvoiceId = Invoice.InvoiceId JOIN Customer ON Invoice.CustomerId = Customer.CustomerId GROUP BY CustomerId ORDER BY IndividualSales DESC;
 
 #Part 2 
