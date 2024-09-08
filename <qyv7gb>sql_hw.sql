@@ -61,19 +61,19 @@ EmployeeID INT,
 PRIMARY KEY (Name, Surname, Product)
 );
 
-INSERT INTO customers(Name, Surname, Price, Product, EmployeeID)
+INSERT INTO CustomerInformation(Name, Surname, Price, Product, EmployeeID)
 VALUES ("Joe", "Ryan", 61, "DeskChair", 1);
 
-INSERT INTO customers(Name, Surname, Price, Product, EmployeeID)
+INSERT INTO CustomerInformation(Name, Surname, Price, Product, EmployeeID)
 VALUES ("Bill", "Robinson", 90, "Dresser", 2);
 
-INSERT INTO customers(Name, Surname, Price, Product, EmployeeID)
+INSERT INTO CustomerInformation(Name, Surname, Price, Product, EmployeeID)
 VALUES ("Lacy", "Robinson", 200, "Couch", 3);
 
-INSERT INTO customers(Name, Surname, Price, Product, EmployeeID)
+INSERT INTO CustomerInformation(Name, Surname, Price, Product, EmployeeID)
 VALUES ("Jack", "Hamilton", 165, "Crib", 4);
 
-INSERT INTO customers(Name, Surname, Price, Product, EmployeeID)
+INSERT INTO CustomerInformation(Name, Surname, Price, Product, EmployeeID)
 VALUES ("Emilia", "Johnson", 59, "Mirror", 5);
 
 #Table 2 
