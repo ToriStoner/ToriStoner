@@ -119,8 +119,18 @@ VALUES ("Natalia", "Smith", 30948, 20, "Associate", 1)
 
 #1 Find the three most expensive items customers have bought. 
 
+SELECT Product FROM customers
+ORDER BY Price DESC 
+LIMIT 3;
+
 #2 Retrieve the items that have a quantity of above 70. 
 
-#List the employees with more than 1 year of experience. 
+SELECT ProductName, Quantity FROM Inventory WHERE Quantity > 70;
+
+#3 List the employees with more than 1 year of experience. 
+
+SELECT YearsEmployeed, Name, Surname FROM employees WHERE YearsEmployeed > 1;
+
+
 
 
