@@ -80,19 +80,19 @@ VALUES ("Emilia", "Johnson", 59, "Mirror", 5);
 
 CREATE TABLE ProductsList ( Product VARCHAR(80), Color VARCHAR(80), Width INT, Height INT, Length INT, Quantity INT );
 
-INSERT INTO Inventory(Product, Color, Width, Height, Length, Quantity)
+INSERT INTO ProductsList(Product, Color, Width, Height, Length, Quantity)
 VALUES ("Dresser", "Brown", 30, 50, 18, 107);
 
-INSERT INTO Inventory(Product, Color, Width, Height, Length, Quantity)
+INSERT INTO ProductsList(Product, Color, Width, Height, Length, Quantity)
 VALUES ("Mirror", "White", 40, 30, 25, 99);
 
-INSERT INTO Inventory(Product, Color, Width, Height, Length, Quantity)
+INSERT INTO ProductsList(Product, Color, Width, Height, Length, Quantity)
 VALUES ("Crib", "Brown", 16, 16, 16, 65);
 
-INSERT INTO Inventory(Product, Color, Width, Height, Length, Quantity)
+INSERT INTO ProductsList(Product, Color, Width, Height, Length, Quantity)
 VALUES ("Desk", "Black", 20, 70, 40, 35);
 
-INSERT INTO Inventory(Product, Color, Width, Height, Length, Quantity)
+INSERT INTO ProductsList(Product, Color, Width, Height, Length, Quantity)
 VALUES ("Chair", "Brown", 6, 10, 4, 289);
 
 
@@ -121,17 +121,17 @@ VALUES ("Natalia", "Smith", 30948, 20, "Associate", 1, 5)
 
 #1 Find the three most expensive items customers have bought. 
 
-SELECT Product FROM customers
+SELECT Product FROM CustomerInformation 
 ORDER BY Price DESC 
 LIMIT 3;
 
 #2 Retrieve the items that have a quantity of above 70. 
 
-SELECT ProductName, Quantity FROM Inventory WHERE Quantity > 70;
+SELECT Product, Quantity FROM ProductsList WHERE Quantity > 70;
 
 #3 List the employees with more than 1 year of experience. 
 
-SELECT YearsEmployeed, Name, Surname FROM employees WHERE YearsEmployeed > 1;
+SELECT YearsEmployed, Name, Surname FROM EmployeeRoles WHERE YearsEmployed > 1;
 
 
 
